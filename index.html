@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatito Guapo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <header>
+        <div class="header__title" >
+            <h1>Gatito Guapo</h1>
+            <img class="header__icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsAEZFR7CPw341Omb1yGFitNOSE6Sbrx2xXrWdGpkKnA&s=10" alt="icono gatito guapo">
+        </div>
+        <button class="nav__icon" onclick="document.querySelector('.header__navbar').classList.toggle('hidden')">
+            ≡
+        </button>
+        <nav class="header__navbar hidden">
+            <ul class="nav">
+                <li class="nav__link nav__link--active">
+                    <a  href="index.html">Inicio</a>
+                </li>
+                <li class="nav__link"><a href="product.html">Producto</a></li>
+                <li class="nav__link"><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main>
+        <aside>
+            <form action="">
+                <label for="query">Buscar</label>
+                <input type="text" id="query" name="query" placeholder="gato persa">
+                <fieldset>
+                    <legend>Precio</legend>
+                    <label for="min_price">Mínimo</label>
+                    <input type="number" name="min_price" id="min_price" min="1" value="1" step="0.5">
+
+                    <label for="max_price">Máximo</label>
+                    <input type="number" name="max_price" id="max_price" min="1" value="300">
+
+                </fieldset>
+                <label for="brand">Marca</label>
+                <select name="brand" id="brand" multiple>
+                    <option value="fl-154">Flexi</option>
+                    <option value="du-875">Duki</option>
+                    <option value="go-6453">Gotoo</option>
+                </select>
+                <button>Buscar</button>
+            </form>
+        </aside>
+        <section class="product-list">
+            <article class="product">
+                <img class="product__image" src="https://www.kiwoko.com/dw/image/v2/BDLQ_PRD/on/demandware.static/-/Sites-kiwoko-master-catalog/default/dw7d7c6d30/images/arnes_correa_gato_suave_rojo_trixie_TRI41896_M.jpg?sw=275&sh=275&sm=fit"
+                    alt="gatito con correa">
+                <p class="product__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ipsa
+                    explicabo reiciendis ab libero labore voluptate quibusdam, delectus magni nam doloremque cumque
+                    maiores nesciunt obcaecati iste ullam enim molestias provident.</p>
+                <p class="product__valoration">6/10</p>
+                <p class="product__price product__price--offer">100</p>
+                <a href="product.html">
+                    <button>Ver más</button>
+                </a>
+            </article>
+            <!-- más adelante tendremos más artículos -->
+        </section>
+       
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
